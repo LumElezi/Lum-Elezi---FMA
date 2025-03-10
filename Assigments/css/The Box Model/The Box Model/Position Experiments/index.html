@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+
+        .card-container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px 15px 15px;
+            margin: 30px 0;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            right: 450px;
+        }
+
+        .card-title {
+            position: absolute;
+            top: -30px;
+            left: 15px;
+            padding: 5px 10px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+
+        .floating-video {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            background: white;
+            border-radius: 8px;
+            border: 3px solid black;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .floating-video iframe {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .floating-video p {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="card">
+            <span class="card-title">Neil Armstrong</span>
+            <button class="close-btn">X</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, harum!</p>
+        </div>
+
+        <div class="card">
+            <span class="card-title">Buzz Aldrin</span>
+            <button class="close-btn">X</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, harum!</p>
+        </div>
+
+        <div class="card">
+            <span class="card-title">Neil Armstrong</span>
+            <button class="close-btn">X</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, harum!</p>
+        </div>
+
+        <div class="card">
+            <span class="card-title">Neil Armstrong</span>
+            <button class="close-btn">X</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, harum!</p>
+        </div>
+
+        <div class="card">
+            <span class="card-title">Neil Armstrong</span>
+            <button class="close-btn">X</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, harum!</p>
+        </div>
+    </div>
+
+    <div class="floating-video">
+        <iframe width="660" height="190" src="https://www.youtube.com/embed/u62msvnURwk?si=KErqzfF_RGGDPa-U"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>The rotating earth</p>
+    </div>
+
+</body>
+</html>
