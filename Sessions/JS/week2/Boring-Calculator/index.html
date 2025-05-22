@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstNumber = parseFloat(prompt('Write the first number'))
+        let operator = prompt('Write a operator')
+        let secondNumber = parseFloat(prompt('Write the second number'))
+        
+            let result;
+          
+        switch(operator){
+            
+            case '+':
+                result = firstNumber + secondNumber
+                console.log(`${firstNumber} + ${secondNumber} = ${result}`)
+                break;
+                case '-':
+                result = firstNumber - secondNumber
+                console.log(`${firstNumber} - ${secondNumber} = ${result}`)
+                break;
+                case '*':
+                result = firstNumber * secondNumber
+                console.log(`${firstNumber} * ${secondNumber} = ${result}`)
+                break;
+                case '/':
+                result = firstNumber / secondNumber
+                console.log(`${firstNumber} / ${secondNumber} = ${result}`)
+                break;
+                default:
+                    console.log()
+                 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let userinput = parseInt(prompt('Write a number form 1-100'))
+        let numbergiven = userinput
+        if (Number.isInteger(numbergiven) && numbergiven >= 0 && numbergiven <= 100) {
+
+            let commaSeparated = ""
+            for (let i = 1; i <= numbergiven; i++) {
+                commaSeparated += i;
+                if (i < numbergiven) {
+                    commaSeparated += ", ";
+                }
+            }
+            console.log(commaSeparated);
+
+        }
+
+    </script>
+</body>
+
+</html>

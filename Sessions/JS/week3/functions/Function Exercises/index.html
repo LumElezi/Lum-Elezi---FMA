@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function helloWorld(){
+            let log = "Hello World"
+            console.log(log)
+        }
+
+        for(i=0; i < 10 ; i++){
+            helloWorld()
+        }
+
+         function stringParameter(param1){
+             console.log(param1)
+        }
+        stringParameter("Hello World")
+
+         let km = parseInt(prompt("Write a number and it will convert km into miles"))
+        function kmConverter(km){
+        let miles = km / 1.609;
+        console.log(miles)
+        }
+
+        kmConverter(km)
+
+       let cm = parseInt(prompt("Write a radius of a circle in cm and it will convert into the area"))
+        function radiusConveter(cm){
+         let radius = cm * cm * 3.1416
+         console.log(radius)
+        }
+        radiusConveter(cm)
+
+
+        let name = prompt("Enter name")
+        let surname = prompt("Enter surname")
+        function nameAndSurname(name, surname){
+            let paragraph = `Welcome ${name} ${surname}`
+            console.log(paragraph)
+        }
+
+        nameAndSurname(name, surname)
+            
+            let age = parseInt(prompt("Write your age to tell if u are a working citizen or not (true or false)"))
+        function isWorkingCitizen(age){
+            let agenumber;
+            if(age >= 18 || age <= 65){
+                 agenumber = "true"
+            }
+            else {
+                agenumber = "false"
+            }
+            console.log(agenumber)
+        } 
+
+        isWorkingCitizen(age)
+
+
+        let num = parseInt(prompt("write a number and if its even it will say true and if its not it will say flase"))
+        function isEven(num){
+            let isEvenNum;
+              if(num % 2 === 0){
+                isEvenNum = "true"
+              }
+              else if (num % 2 === 1){
+                isEvenNum = "false"              
+            }
+            console.log(isEvenNum)
+        }
+
+        isEven(num)
+
+    </script>
+</body>
+</html>

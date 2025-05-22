@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let username = prompt("Enter username:")
+        let password = prompt("Enter a password:")
+        if(username ==  "admin" && password == "12341234" ){
+           alert("Wellcome admin")
+         
+        }
+        else if( (username == "admin" && password != "12341234") || (username != "admin" && password == "12341234")){
+            alert("Username or password is wrong")
+        }
+        else{
+           alert("inccorect credantials")
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let points = parseInt(prompt("How many points did you get on the test (0-100)"));
+        let grade;
+        
+        if(points <= 19  && points >= 0) {
+           grade = 1
+           console.log(`Your grade is ${grade}`)
+        }
+        else if(points <= 39 && points >=20) {
+            grade = 2
+            console.log(`Your grade is ${grade}`)
+        }
+        else if(points <= 59 && points >=40) {
+            grade = 3
+            console.log(`Your grade is ${grade}`)
+       }
+       else if(points <= 79 && points >=60) {
+        grade = 4
+        console.log(`Your grade is ${grade}`)
+       }
+       else if(points <= 100 && points >=80) {
+        grade = 5
+        console.log(`Your grade is ${grade}`)
+       }
+    
+      else{
+        console.log("Error input, please put numbers in the range (0-100)")
+      }
+    </script>
+</body>
+</html>

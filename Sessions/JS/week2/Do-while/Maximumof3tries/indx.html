@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let password = '12341234'
+        let userinput; 
+        let tries = 4;
+     
+        do{ 
+            userinput = prompt('Write password')
+           
+           if(userinput != password){
+            alert(`${tries} tries left`)
+           }
+           tries--
+           if(userinput == password){
+            alert('Password is correct')
+           } 
+        }
+        while(tries > 0){
+          
+           
+          if(tries == 0){
+            alert("No more tries")
+           } 
+          
+          
+        }
+        alert('Ascces denied')
+        
+    </script>
+</body>
+</html>
